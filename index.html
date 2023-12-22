@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="PL">
+<head>
+<meta charset="utf-8">
+<title>7 największych linii lotniczych świata</title>
+<link href="style_index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a name="back1"></a>
+<div class="logo">airlines</div>
+<div class="menu1">
+	<ul>
+		<li><a href="1-AA.html">American Airlines Group</a></li>
+		<li><a href="2-Delta.html">Delta Airlines Group</a></li>
+		<li><a href="3-Ryanair.html">Ryanair</a></li>
+		<li><a href="4-United.html">United Airlines Holdings</a></li>
+		<li><a href="5-Southwest.html">Southwest Airlines</a></li>
+		<li><a href="6-Lufthansa.html">Lufthansa Group</a></li>
+		<li><a href="7-IAG.html">International Airlines Group</a></li>
+	<div class="dropdown">
+		<button class="dropbtn">MENU &#9776;</button>
+		<div class="dropdown-content">
+    		<a href="#b">Galeria</a>
+			<a href="#a">Informacje</a>
+    		<a href="#c">Formularz</a>
+  		</div>
+	</div>
+	</ul>
+</div>
+<br>
+<div class="menu2">
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="1-AA.html">American</a>
+    <a href="2-Delta.html">Delta</a>
+    <a href="3-Ryanair.html">Ryanair</a>
+    <a href="4-United.html">United</a>
+	<a href="5-Southwest.html">Southwest</a>
+	<a href="6-Lufthansa.html">Lufthansa</a>
+	<a href="7-IAG.html">IAG</a>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer; padding: 5px 100px 5px 20px;" onclick="openNav()" class="przycisk">&#9776; Otwórz</span>
+	
+	<div class="dropdown">
+		<button class="dropbtn">MENU  &#9776;</button>
+		<div class="dropdown-content">
+    		<a href="#b">Galeria</a>
+			<a href="#a">Informacje</a>
+    		<a href="#c">Formularz</a>
+  		</div>
+	</div>
+</div>
+
+<a name="b"></a><br>
+<div class="foto">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="src/AAx.png" style="width:100%; height:100%;" alt="Photo">
+    <div class="text">American Airlines Group</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="src/Deltax.jpg" style="width:100%; height:100%; max-height: 600px;" alt="Photo">
+    <div class="text">Delta Airlines Group</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="src/Ryan.jpg" style="width:100%; height:100%;" alt="Photo">
+    <div class="text">Ryanair</div>
+  </div>
+	
+ <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="src/United.jpg" style="width:100%; height:100%; max-height: 600px;" alt="Photo">
+    <div class="text">United Airlines Holdings</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="src/Southwest.jpg" style="width:100%; height:100%;" alt="Photo">
+    <div class="text">Southwest Airlines</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="src/Luft_edited.jpg" style="width:100%; height:100%;" alt="Photo">
+    <div class="text">Lufthansa Group</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="src/IAG_British.jpg" style="width:100%; height:100%;" alt="Photo">
+    <div class="text">IAG - British Airways</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  	<span class="dot" onclick="currentSlide(1)"></span>
+  	<span class="dot" onclick="currentSlide(2)"></span>
+  	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+	<span class="dot" onclick="currentSlide(6)"></span>
+	<span class="dot" onclick="currentSlide(7)"></span>
+</div>
+<script>let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+	</script>	
+	
+<a name="a"></a><h2 class="white">Liczba przewożonych pasażerów rocznie:</h2>	
+<table class="tabela">
+  <tbody>
+    <tr>
+      <th scope="col">Linia lotnicza</th>
+      <th scope="col">Liczba pasażerów </th>
+    </tr>
+    <tr>
+      <td class="td">1. American Airlines Group</td>
+      <td>Ponad 230 mln</td>
+    </tr>
+    <tr>
+      <td class="td">2. Delta Airlines Group</td>
+      <td>Ponad 200 mln</td>
+    </tr>
+    <tr>
+      <td class="td">3. Ryanair</td>
+      <td>160 mln</td>
+    </tr>
+    <tr>
+      <td class="td">4. United Airlines Holdings</td>
+      <td>144,3 mln</td>
+    </tr>
+    <tr>
+      <td class="td">5. Southwest Airlines</td>
+      <td>122,6 mln</td>
+    </tr>
+    <tr>
+      <td class="td">6. Lufthansa Group</td>
+      <td>101,8 mln</td>
+    </tr>
+    <tr>
+      <td class="td">7. IAG</td>
+      <td>94 mln</td>
+    </tr>
+  </tbody>
+</table>
+
+	
+	
+	
+	
+	
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form action="mailto:jakub.klimowicz@tm1.edu.pl" method="post">
+<div class="jeden"><a name="c"><h2 style="color: aqua">Ankieta dotycząca jakości strony internetowej</h2></a></div>
+<div class="kont">
+<h3 class="white">Jak Pan/Pani ocenia przejrzystość strony?</h3>
+<input type="radio" name="x" id="1" value="1"><label for="1" class="white">1 na 5</label><br>
+<input type="radio" name="x" id="2" value="2"><label for="2" class="white">2 na 5</label><br>
+<input type="radio" name="x" id="3" value="3"><label for="3" class="white">3 na 5</label><br>
+<input type="radio" name="x" id="4" value="4"><label for="4" class="white">4 na 5</label><br>
+<input type="radio" name="x" id="5" value="5"><label for="5" class="white">5 na 5</label><br>
+<br>
+<h3 class="white">Jak Pan/Pani ocenia jakość i prawdziwość danych?</h3>
+<input type="radio" name="y" id="11" value="11"><label for="11" class="white">1 na 5</label><br>
+<input type="radio" name="y" id="22" value="22"><label for="22" class="white">2 na 5</label><br>
+<input type="radio" name="y" id="33" value="33"><label for="33" class="white">3 na 5</label><br>
+<input type="radio" name="y" id="44" value="44"><label for="44" class="white">4 na 5</label><br>
+<input type="radio" name="y" id="55" value="55"><label for="55" class="white">5 na 5</label><br>
+<h3 class="white">Jakiej przeglądarki Pan/Pani używa?</h3>
+<select name="web" id="web">
+<option selected>Wybierz opcję...</option>
+<option value="Opera">Opera</option>
+<option value="Microsoft Edge">Microsoft Edge</option>
+<option value="Opera GX">Chrome</option>
+<option value="Firefox">Firefox</option>
+<option value="Safari">Safari</option>
+<option value="Thor">Opera GX</option>
+<option value="Inna">Inna</option>
+	</select></div>
+<br>
+<div class="jeden"><label for="tekst" class="white">Uwagi:</label><br><textarea name="tekst" id="tekst" cols="100" rows="3">Czy mają Państwo uwagi do tej strony?
+    </textarea>
+<br>
+<button type="button" onclick="alert('DZIĘKUJEMY ZA SKORZYSTANIE Z NASZYCH USŁUG')">Naciśnij</button>
+<input type="reset" value="Zresetuj stronę">
+<input type="submit" value="Wyślij dane">
+</div></form><br><br><br>
+<div class="jeden"><a href="#back1" style="font-size: 200%; color: navy; text-decoration: none;"><b>Powrót do góry</b></a></div><br><br><br>
+<div class="stopka"><div class="animacja">Made by Jakub Klimowicz 2ta</div></div>
+</body>
+</html>
