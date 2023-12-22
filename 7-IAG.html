@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>International Airlines Group</title>
+<link href="style_index.css" rel="stylesheet" type="text/css">
+</head>
+<body class="podstr">
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Strona Główna</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" >Informacje</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Flota</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Nawigacja</button>
+
+<div id="Home" class="tabcontent">
+  <h3 class="h33">Strona Główna</h3>
+  <p class="jeden">Strona dotycząca <b>International Airlines Group</b>. Aby wrócić do strony głównej klinkij<br><br><a class="powrot" href="index.html">TUTAJ</a></p>
+  <br><br>
+
+  <img class="podfoto" alt="foto" src="src/IAG_British.jpg">
+</div>
+
+<div id="News" class="tabcontent">
+  <h3 class="h33">Informacje</h3>
+  <div class="p"><p>
+    IAG to kolejny holding na naszej liście. Spółka, która pierwotnie składała się z British Airways i Iberia, obecnie posiada znacznie więcej marek:
+</p>
+<ul>
+    <li>British Airways</li>
+    <li>BA CityFlyer</li>
+    <li>OpenSkies</li>
+    <li>Comair</li>
+    <li>Sun-Air</li>
+    <li>Iberia</li>
+    <li>Iberia Regional</li>
+    <li>Vueling</li>
+    <li>Aer Lingus</li>
+</ul>
+<p>
+    Ze względu na wiele linii wchodzących w skład IAG, nawet nie próbowaliśmy opisać ich floty. Z obecnych statystyk wynika, że koncern użytkuje 558 samolotów produkowanych między innymi przez Boeinga jak i Airbusa.
+</p></div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3 class="h33">Flota</h3>
+  <p class="jeden">Informacje o flocie British Airways - flagowej części spółki IAG:</p>
+	<table class="pod">
+	<thead>
+        <tr>
+            <th>Typ</th>
+            <th>Liczba</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Airbus A319-100</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Airbus A320-200</td>
+            <td>67</td>
+        </tr>
+        <tr>
+            <td>Airbus A320neo</td>
+            <td>17 + 5 zamówionych</td>
+        </tr>
+        <tr>
+            <td>Airbus A321-200</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Airbus A321neo</td>
+            <td>10 + 5 zamówionych</td>
+        </tr>
+        <tr>
+            <td>Airbus A350-1000</td>
+            <td>13 + 5 zamówionych</td>
+        </tr>
+        <tr>
+            <td>Airbus A380-800</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Boeing 777-9</td>
+            <td>18 zamówionych</td>
+        </tr>
+        <tr>
+            <td>Boeing 777-200ER</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>Boeing 777-300ER</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>Boeing 787-8</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Boeing 787-9</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Boeing 787-10</td>
+            <td>4 + 8 zamówionych</td>
+        </tr>
+        <tr>
+            <td>Razem</td>
+            <td>269</td>
+        </tr>
+    </tbody>
+</table>
+<p class="jeden">
+	Nie można też zapomnieć, że International Airlines <strong>Group</strong> posiada też wiele innych linii lotniczych.
+</p>
+</div>
+
+<div id="About" class="tabcontent">
+  	<h3 class="h33">Nawigacja</h3>
+  	<p class="jeden">Nawigacja do podstron oraz powrót do strony głównej</p><br>
+  	<!--<div class="kont-odnosnik">
+	<a href="index.html"><button class="odnosnik">Strona główna</button></a>
+	<a href="2-Delta.html"><button class="odnosnik1">Delta Airlines</button></a>
+	<a href="3-Ryanair.html"><button class="odnosnik">Ryanair</button></a>
+	<a href="4-United.html"><button class="odnosnik1">United Airlines</button></a>
+	<a href="5-Southwest.html"><button class="odnosnik">Southwest</button></a>
+	<a href="6-Lufthansa.html"><button class="odnosnik1">Lufthansa</button></a>
+	<a href="7-IAG.html"><button class="odnosnik">IA Group</button></a>
+	</div>-->
+	<ul class="podmenu">
+	<li><a href="index.html">Strona Główna</a></li>
+	<li><a href="1-AA.html">American Airlines</a></li>
+	<li><a href="2-Delta.html">Delta Airlines</a></li>
+	<li><a href="3-Ryanair.html">Ryanair</a></li>
+	<li><a href="4-United.html">United Airlines</a></li>
+	<li><a href="5-Southwest.html">Southwest</a></li>
+	<li><a href="6-Lufthansa.html">Lufthansa</a></li>
+	</ul>
+</div>
+	
+<script>
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+</script>
+</body>
+</html>
